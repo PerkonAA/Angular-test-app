@@ -1,0 +1,10 @@
+<h3>First task</h3>
+<p>Имя пользователя: {{userName}}</p>
+<p>Возраст пользователя: {{userAge}}</p>
+<br>
+<h3>Second task</h3>
+<button (click)="change(true)">+</button>
+<button (click)="change(false)">-</button>
+<br>
+<h3>Third task</h3>
+<input [ngModel]="userName" (ngModelChange)="onNameChange($event)">
